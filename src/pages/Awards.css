@@ -1,0 +1,534 @@
+.awards-page {
+  min-height: 100vh;
+  background: #FAFAF8;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 28px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: #2D5A27;
+  color: white;
+  border-color: #2D5A27;
+}
+
+.btn-primary:hover {
+  background: #1E3D1A;
+  border-color: #1E3D1A;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(45, 90, 39, 0.3);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #2D5A27;
+  border-color: #2D5A27;
+}
+
+.btn-outline:hover {
+  background: rgba(45, 90, 39, 0.08);
+}
+
+.btn-lg {
+  padding: 16px 32px;
+  font-size: 1rem;
+}
+
+.btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  font-weight: 600;
+  color: #1A2E18;
+  margin: 0 0 12px;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: rgba(26, 46, 24, 0.6);
+  margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Page Hero */
+.page-hero {
+  padding: 140px 0 80px;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(26, 46, 24, 0.03) 0%, transparent 100%);
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(45, 90, 39, 0.1);
+  border: 1px solid rgba(45, 90, 39, 0.2);
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #2D5A27;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+
+.page-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-weight: 600;
+  color: #1A2E18;
+  margin: 0 0 16px;
+  line-height: 1.15;
+}
+
+.page-hero p {
+  font-size: 1.25rem;
+  color: rgba(26, 46, 24, 0.6);
+  margin: 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Awards Stats */
+.awards-stats {
+  padding: 60px 0;
+  background: white;
+  border-bottom: 1px solid rgba(45, 90, 39, 0.08);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 24px;
+}
+
+.stat-number {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 600;
+  color: #2D5A27;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: rgba(26, 46, 24, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Competitions */
+.awards-competitions {
+  padding: 100px 0;
+  background: white;
+}
+
+.competitions-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.competition-card {
+  background: #FAFAF8;
+  border: 1px solid rgba(45, 90, 39, 0.08);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.competition-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(45, 90, 39, 0.1);
+  border-color: rgba(45, 90, 39, 0.15);
+}
+
+.comp-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 32px;
+  border-bottom: 1px solid rgba(45, 90, 39, 0.08);
+}
+
+.comp-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #1A2E18;
+  margin: 0 0 8px;
+}
+
+.comp-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 0.85rem;
+  color: rgba(26, 46, 24, 0.5);
+}
+
+.comp-trophy {
+  font-size: 2.5rem;
+}
+
+.comp-awards {
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.award-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: white;
+  border: 1px solid rgba(45, 90, 39, 0.08);
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.award-item:hover {
+  border-color: rgba(45, 90, 39, 0.2);
+}
+
+.medal-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.medal-badge.gold {
+  background: linear-gradient(135deg, #F4E4A1 0%, #D4A843 100%);
+  color: #1A2E18;
+}
+
+.medal-badge.silver {
+  background: linear-gradient(135deg, #E0E0E0 0%, #B0B0B0 100%);
+  color: #1A2E18;
+}
+
+.medal-badge.bronze {
+  background: linear-gradient(135deg, #CD7F32 0%, #A0522D 100%);
+  color: white;
+}
+
+.award-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.award-product {
+  font-weight: 600;
+  color: #1A2E18;
+}
+
+.award-category {
+  font-size: 0.8rem;
+  color: rgba(26, 46, 24, 0.5);
+}
+
+/* Certifications */
+.certifications-section {
+  padding: 100px 0;
+  background: #1A2E18;
+}
+
+.certifications-section .section-header h2 {
+  color: #F4E4A1;
+}
+
+.certifications-section .section-header p {
+  color: rgba(232, 240, 230, 0.6);
+}
+
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.cert-card {
+  padding: 28px 24px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(232, 240, 230, 0.08);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(244, 228, 161, 0.3);
+  background: rgba(244, 228, 161, 0.05);
+}
+
+.cert-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.cert-logo {
+  font-size: 2.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.cert-header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #E8F0E6;
+  margin: 0 0 4px;
+}
+
+.cert-issuer {
+  font-size: 0.75rem;
+  color: rgba(232, 240, 230, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cert-desc {
+  font-size: 0.85rem;
+  color: rgba(232, 240, 230, 0.6);
+  margin: 0 0 16px;
+  line-height: 1.5;
+}
+
+.cert-validity {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  color: rgba(232, 240, 230, 0.4);
+}
+
+.cert-validity svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Lab Section */
+.lab-section {
+  padding: 100px 0;
+  background: white;
+}
+
+.lab-grid {
+  display: grid
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.lab-card {
+  padding: 32px;
+  background: #FAFAF8;
+  border: 1px solid rgba(45, 90, 39, 0.08);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.lab-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(45, 90, 39, 0.08);
+  border-color: rgba(45, 90, 39, 0.15);
+}
+
+.lab-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1A2E18;
+  margin: 0 0 12px;
+}
+
+.lab-card > p {
+  font-size: 0.95rem;
+  color: rgba(26, 46, 24, 0.6);
+  margin: 0 0 20px;
+  line-height: 1.6;
+}
+
+.lab-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lab-card li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: rgba(26, 46, 24, 0.7);
+  line-height: 1.5;
+}
+
+.lab-card svg {
+  width: 18px;
+  height: 18px;
+  color: #2D5A27;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 100px 0;
+  background: #1A2E18;
+}
+
+.cta-card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 60px 48px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(244, 228, 161, 0.2);
+  border-radius: 24px;
+}
+
+.cta-card h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 600;
+  color: #F4E4A1;
+  margin: 0 0 16px;
+}
+
+.cta-card p {
+  font-size: 1.1rem;
+  color: rgba(232, 240, 230, 0.6);
+  margin: 0 0 32px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .certs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lab-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 120px 0 60px;
+  }
+
+  .awards-stats {
+    padding: 48px 0;
+  }
+
+  .awards-competitions {
+    padding: 60px 0;
+  }
+
+  .certifications-section {
+    padding: 60px 0;
+  }
+
+  .lab-section {
+    padding: 60px 0;
+  }
+
+  .cta-section {
+    padding: 60px 0;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .stat-item {
+    padding: 16px;
+  }
+
+  .comp-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .comp-awards {
+    padding: 20px;
+  }
+
+  .award-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .medal-badge {
+    align-self: flex-start;
+  }
+
+  .certs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-card {
+    padding: 40px 24px;
+  }
+}

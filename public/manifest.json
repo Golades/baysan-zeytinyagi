@@ -1,0 +1,36 @@
+{
+  "name": "Baysan Zeytinyağı",
+  "short_name": "Baysan",
+  "description": "1985'ten beri Ayvalık'tan doğal, ödüllü extra virgin zeytinyağı",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAFAF8",
+  "theme_color": "#2D5A27",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["shopping", "food", "health"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Ürünler",
+      "short_name": "Ürünler",
+      "description": "Zeytinyağı koleksiyonumuzu görüntüleyin",
+      "url": "/urunler"
+    },
+    {
+      "name": "İletişim",
+      "short_name": "İletişim",
+      "description": "Bizimle iletişime geçin",
+      "url": "/iletisim"
+    }
+  ]
+}
